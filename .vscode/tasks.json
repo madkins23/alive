@@ -44,6 +44,16 @@
             "group": "build",
             "label": "npm: build",
             "detail": "tsc -p ./tsconfig.build.json"
+        },
+        {
+            "label": "Run process to watch for changed files to compile",
+            "type": "shell",
+            "command": "npm run watch",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": { "runOn": "folderOpen" }
         }
     ]
 }
